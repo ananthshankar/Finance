@@ -1,0 +1,24 @@
+{
+"autoload": {
+    "psr-4": {
+        "Finance\\": "lib/"
+    }
+},
+    "require": {
+        "guzzlehttp/guzzle": "^6.5",
+        "laminas/laminas-diactoros": "^2.2",
+        "altorouter/altorouter": "dev-master",
+        "vlucas/phpdotenv": "^4.1@dev"
+    },
+
+ "config": {
+    "github-oauth": {
+        "github.com": "b07e985dbb54436e49edbcd9f476c3c8f0e468bd"
+    }
+},
+
+    "minimum-stability": "dev",
+    "require-dev": {
+        "phpunit/phpunit": "9"
+    }
+}
