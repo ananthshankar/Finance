@@ -397,6 +397,67 @@
         ]
     },
     {
+        "name": "laminas/laminas-httphandlerrunner",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/laminas/laminas-httphandlerrunner.git",
+            "reference": "22ef18b98864a792f80d939a1619e7457287b195"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/laminas/laminas-httphandlerrunner/zipball/22ef18b98864a792f80d939a1619e7457287b195",
+            "reference": "22ef18b98864a792f80d939a1619e7457287b195",
+            "shasum": ""
+        },
+        "require": {
+            "laminas/laminas-zendframework-bridge": "^1.0",
+            "php": "^7.1",
+            "psr/http-message": "^1.0",
+            "psr/http-message-implementation": "^1.0",
+            "psr/http-server-handler": "^1.0"
+        },
+        "replace": {
+            "zendframework/zend-httphandlerrunner": "self.version"
+        },
+        "require-dev": {
+            "laminas/laminas-coding-standard": "~1.0.0",
+            "laminas/laminas-diactoros": "^1.7 || ^2.1.1",
+            "phpunit/phpunit": "^7.0.2"
+        },
+        "time": "2020-01-08T12:23:52+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.1.x-dev",
+                "dev-develop": "1.2.x-dev"
+            },
+            "laminas": {
+                "config-provider": "Laminas\\HttpHandlerRunner\\ConfigProvider"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Laminas\\HttpHandlerRunner\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "description": "Execute PSR-15 RequestHandlerInterface instances and emit responses they generate.",
+        "homepage": "https://laminas.dev",
+        "keywords": [
+            "components",
+            "laminas",
+            "mezzio",
+            "psr-15",
+            "psr-7"
+        ]
+    },
+    {
         "name": "laminas/laminas-zendframework-bridge",
         "version": "dev-develop",
         "version_normalized": "dev-develop",
@@ -1407,6 +1468,61 @@
             "psr-7",
             "request",
             "response"
+        ]
+    },
+    {
+        "name": "psr/http-server-handler",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/http-server-handler.git",
+            "reference": "f981eec4f9870ace3ee8ada18c88a59461080cba"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/f981eec4f9870ace3ee8ada18c88a59461080cba",
+            "reference": "f981eec4f9870ace3ee8ada18c88a59461080cba",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=7.0",
+            "psr/http-message": "^1.0"
+        },
+        "time": "2019-06-07T16:00:12+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Http\\Server\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for HTTP server-side request handler",
+        "keywords": [
+            "handler",
+            "http",
+            "http-interop",
+            "psr",
+            "psr-15",
+            "psr-7",
+            "request",
+            "response",
+            "server"
         ]
     },
     {

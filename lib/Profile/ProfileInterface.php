@@ -1,13 +1,12 @@
 <?php
 
 namespace Finance\Profile;
-use Psr\Http\Message\ResponseInterface;
 
 interface ProfileInterface
 {
-	
+	public function __construct(string $path);
 	public function profile(array $value): array;
-	public function getProfileData(string $symbol);
+	public function getProfileData(string $symbol): array;
 
 }
 ?>  
